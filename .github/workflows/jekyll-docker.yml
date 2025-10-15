@@ -4,8 +4,50 @@
   <meta charset="utf-8">
   <title>My First Website</title>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
-  <h1>Hello World 🌍</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>示例：正确语法</title>
+    <style>
+      /* 更现代的居中方式，避免用 margin-top 进行“凑”位置 */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;       /* 垂直居中 */
+        justify-content: center;   /* 水平居中 */
+        text-align: center;
+        padding: 16px;             /* 移动端留点内边距 */
+        background: #f7f7f7;
+      }
+      .card {
+        background: #fff;
+        padding: 40px 32px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 24px;
+      }
+      p {
+        margin: 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main" aria-label="内容卡片">
+      <h1>搞正确的语法啊 ✅</h1>
+      <p>这是一个结构完整、语法正确、居中布局更现代的 HTML 示例。</p>
+    </main>
+  </body>
+</html>  <h1>Hello World 🌍</h1>
   <p>This is my first website on GitHub Pages!</p>
 </body>
 </html>
